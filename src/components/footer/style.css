@@ -1,0 +1,28 @@
+footer{
+    padding: 10px;
+    font-size: 12px;
+    border-top: var(--border);
+    min-height: 20vh;
+    margin-top: 20px;
+}
+footer .footer{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+footer .footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    footer .footer{
+        flex-direction: column;
+    }
+}

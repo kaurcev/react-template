@@ -1,0 +1,29 @@
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    background-color: var(--header);
+    color: #333333;
+    box-shadow: var(--shadow-m);
+    font-family: "FuturaPTBook";
+    z-index: 100;
+}
+.header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.logobar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.logo{
+    max-height: 25px;
+}

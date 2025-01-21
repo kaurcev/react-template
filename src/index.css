@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "FuturaPTDemi";
+  src: url("./fonts/FuturaPTMedium.otf");
+}
+
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("./fonts/FuturaPTMedium.otf");
+}
+
+@font-face {
+  font-family: "FuturaPTLight";
+  src: url("./fonts/FuturaPTLight.otf");
+}
+@font-face {
+  font-family: "FuturaPTHeavy";
+  src: url("./fonts/FuturaPTHeavy.otf");
+}
+
+@font-face {
+  font-family: "FuturaPTBook";
+  src: url("./fonts/FuturaPTBook.otf");
+}
+
+@font-face {
+  font-family: "FuturaPTBold";
+  src: url("./fonts/FuturaPTBold.otf");
+}
+
+@font-face {
+  font-family: "FuturaPTExtraBold";
+  src: url("./fonts/FuturaPTExtraBold.otf");
+}
+
+:root{
+  --header: #ffffff;
+  --background: #f2f4f8;
+  --color: #000;
+  --akcent: #4e45ff;
+  --akcent-two: #cecbff;
+  --loading-grey: #d9dde185;
+  --grey: #919191;
+  --link: var(var(--akcent));
+
+  --shadow: 0 0 10px 0 #00000008;
+  --shadow-m: 0 0 10px 0 #00000020;
+  --border-radius: 6px;
+  --paddi: 6px 8px;
+  --border-radius-2x: 12px;
+  --inppad: 5px 8px;
+  --border: 1px solid #9c9c9c;
+}
+
+@media(prefers-color-scheme: dark){
+  :root{
+    --header: #272727;
+    --background: #303030;
+    --color: #e4e4e4;
+    --akcent: #4a4a4a;
+    --akcent-two: #ffffff;
+    --loading-grey: #d9dde185;
+    --grey: #919191;
+  }
+}
+
+
+*{
+  box-sizing: border-box;
+  outline: none;
+  -ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+
+html, body{
+  background-color: var(--background);
+  margin: 0px;
+  color: var(--color);
+  font-family: "FuturaPTMedium";
+  font-display: swap;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color);
+}
+
+main{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  padding: 10px;
+}
+
+button{
+  padding: var(--paddi);
+  border-radius: var(--border-radius);
+  border: none;
+  color: var(--akcent);
+  background-color:var(--akcent-two);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+input{
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: var(--paddi);
+}
+
+main.page{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  min-height: 30vh;
+  text-align: center;
+}
+.full{
+  height: 70vh;
+}
