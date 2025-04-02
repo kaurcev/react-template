@@ -1,7 +1,7 @@
 footer{
     padding: 10px;
     font-size: 12px;
-    border-top: var(--border);
+    border-top: 1px solid var(--grey);
     min-height: 20vh;
     margin-top: 20px;
 }

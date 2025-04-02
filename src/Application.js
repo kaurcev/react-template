@@ -1,32 +1,31 @@
 import React, { createContext, useContext } from 'react';
-import analytics from './tools/Firebase';
+import Ico from './tools/Ico';
 import packageJson from '../package.json';
 import YandexMetrica from './tools/YandexMetrica';
 import CookieConsent from './components/cookies/comp';
+import analytics from './tools/Firebase';
 
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) =>{
-    // Веб-приложение
-    const appSite = packageJson.site;
-    const appName = packageJson.name;
-    const appDomain = packageJson.domain;
-    const appDescription = packageJson.description;
-    const appAuthor = packageJson.author.name;
-    const appAuthorMail = packageJson.author.email;
-    const appAuthorLicense = packageJson.license;
-    const appVersion = packageJson.version;
-    const title = packageJson.title;
+    const appSite           = process.env.REACT_APP_SITE
+    const appName           = process.env.REACT_APP_NAME
+    const appDescription    = process.env.REACT_APP_DESC
+    const appAuthor         = process.env.REACT_APP_AUTHOR
+    const appAuthorMail     = process.env.REACT_APP_AUTHOR_MAIL
+    const title             = process.env.REACT_APP_BASE_TITLE
+
+    /* React-template version */
+    const RTVersion = `react-template v${packageJson.version}`;
 
     document.title = title;
   
   return (
-    <AppContext.Provider value={{appName, appDescription, appAuthor, appAuthorMail, appVersion, appAuthorLicense, analytics, title, appSite,
-      appDomain
+    <AppContext.Provider value={{appName, appDescription, appAuthor, appAuthorMail, RTVersion, analytics, title, appSite, Ico
     }}>
       {children}
       <CookieConsent/>
-      {packageJson.metrik.yandex === 0 ?(<YandexMetrica />): null}
+      {process.env.REACT_APP_YANDEXMETRIKA === 0 ?(<YandexMetrica />): null}
     </AppContext.Provider>
   );
 };

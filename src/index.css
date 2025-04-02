@@ -34,16 +34,15 @@
 
 :root{
   --header: #ffffff;
-  --background: #f2f4f8;
+  --background: #fff;
   --color: #000;
   --akcent: #4e45ff;
   --akcent-two: #cecbff;
   --loading-grey: #d9dde185;
   --grey: #919191;
   --link: var(var(--akcent));
-
-  --shadow: 0 0 10px 0 #00000008;
-  --shadow-m: 0 0 10px 0 #00000020;
+  --shadow: 0 0 10px 0 #00000055;
+  --shadow-m: 0 0 10px 0 #00000015;
   --border-radius: 6px;
   --paddi: 6px 8px;
   --border-radius-2x: 12px;
@@ -78,6 +77,7 @@ html, body{
   color: var(--color);
   font-family: "FuturaPTMedium";
   font-display: swap;
+  font-size: 14px;
 }
 
 a{

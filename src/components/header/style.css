@@ -6,6 +6,7 @@ header{
     background-color: var(--header);
     color: #333333;
     box-shadow: var(--shadow-m);
+    border-bottom: 1px solid var(--grey);
     font-family: "FuturaPTBook";
     z-index: 100;
 }
@@ -17,6 +18,7 @@ header{
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
+    gap: 10px;
 }
 .logobar{
     display: flex;
@@ -26,4 +28,13 @@ header{
 }
 .logo{
     max-height: 25px;
+}
+.header nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.header nav a{
+    font-family: "FuturaPTMedium";
 }

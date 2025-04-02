@@ -1,15 +1,13 @@
 {
   "name": "react-template",
-  "version": "0.0.1",
-  "site": "React Template",
-  "title": "React Page",
+  "version": "0.0.2",
   "description": "My author's example of a react application for faster registration of a new project",
   "author": {
     "name": "Alexsandr Kaurcev",
     "email": "alexsandr@kaurcev.space"
   },
-  "metrik": {
-    "yandex": 0
+  "react-template": {
+    "version": "0.0.1"
   },
   "license": "BSD-3-Clause license",
   "bugs": {
